@@ -8,7 +8,7 @@ import NavBar from "./components/navbar/NavBar";
 function App() {
   const [en, setEn] = useState(true);
   const { BG } = useSelector((state: Tstore) => state.toggleBG);
-  console.log("BG", BG);
+
   const dispatch = useDispatch();
   const { t, i18n } = useTranslation();
   const changeLang = (lang: any) => {
@@ -19,12 +19,12 @@ function App() {
     setEn(false);
   };
   return (
-    <div className="App">
-      <h1>{t("name")}</h1>
+    <div className={BG ? "darkMode" : "lightMode"}>
+      {/* <h1>{t("name")}</h1>
       <button onClick={() => changeLang("en")}>English</button>
       <button onClick={() => changeLang("bn")}>Bangla</button>
       <button onClick={() => dispatch(toggleBg(true))}>Light</button>
-      <button onClick={() => dispatch(toggleBg(false))}>Dark</button>
+      <button onClick={() => dispatch(toggleBg(false))}>Dark</button> */}
       <NavBar lang={en} />
     </div>
   );

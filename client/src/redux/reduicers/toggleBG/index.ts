@@ -4,7 +4,7 @@ interface bgState {
   BG: boolean;
 }
 const initialState: bgState = {
-  BG: false,
+  BG: true,
 };
 export const toggleBGSlice = createSlice({
   name: "toggle",
