@@ -2,10 +2,28 @@
   width: 100%;
   height: auto;
   box-sizing: border-box;
-  overflow: hidden;
+  /* overflow-y: hidden; */
+  position: relative;
 }
 .navbar_content {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  position: relative;
+}
+.switch_lng {
+  width: 60px;
+  padding: 1px 0px;
+  border: 1px solid white;
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-around;
+}
+.switch_lng_btn {
+  background-color: transparent;
+  border: none;
+
+  color: white;
+
+  cursor: pointer;
 }

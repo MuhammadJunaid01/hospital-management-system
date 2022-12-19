@@ -5,27 +5,20 @@ import { useSelector, useDispatch } from "react-redux";
 import { Tstore } from "./redux/store";
 import { toggleBg } from "./redux/reduicers/toggleBG";
 import NavBar from "./components/navbar/NavBar";
+import MainLayoute from "./layoutes/MainLayoute";
+import Header from "./components/header/Header";
 function App() {
-  const [en, setEn] = useState(true);
   const { BG } = useSelector((state: Tstore) => state.toggleBG);
 
   const dispatch = useDispatch();
-  const { t, i18n } = useTranslation();
-  const changeLang = (lang: any) => {
-    i18n.changeLanguage(lang);
-    if (lang == "en") {
-      return setEn(true);
-    }
-    setEn(false);
-  };
+
   return (
     <div className={BG ? "darkMode" : "lightMode"}>
-      {/* <h1>{t("name")}</h1>
-      <button onClick={() => changeLang("en")}>English</button>
-      <button onClick={() => changeLang("bn")}>Bangla</button>
-      <button onClick={() => dispatch(toggleBg(true))}>Light</button>
-      <button onClick={() => dispatch(toggleBg(false))}>Dark</button> */}
-      <NavBar lang={en} />
+      <div className="app">
+        <MainLayoute>
+          <Header />
+        </MainLayoute>
+      </div>
     </div>
   );
 }

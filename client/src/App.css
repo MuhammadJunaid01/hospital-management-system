@@ -11,6 +11,9 @@ li {
   list-style-type: none;
   cursor: pointer;
 }
+.app {
+  padding: 10px 30px;
+}
 .darkMode {
   background-color: #001529 !important;
   color: white;
