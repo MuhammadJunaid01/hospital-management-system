@@ -1,0 +1,31 @@
+.header_container {
+  width: 100%;
+  position: relative;
+}
+.facility_card_container {
+  display: flex;
+  gap: 25px;
+}
+.header_bg_img {
+  width: 100%;
+  background-image: url(../img/bg_hero.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.facility_card {
+  padding: 10px;
+
+  cursor: pointer;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  /* border: 1px solid white; */
+  border-radius: 14px;
+  /* color: #71b2e75d; */
+  transition: transform 400ms ease-in-out;
+  overflow: hidden;
+}
+.facility_card:hover {
+  transform: scale(1.1);
+}

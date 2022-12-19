@@ -1,4 +1,4 @@
-import React, { useCallback, useState } from "react";
+import React, { useCallback, useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 import "./App.css";
 import { useSelector, useDispatch } from "react-redux";
@@ -12,6 +12,9 @@ function App() {
 
   const dispatch = useDispatch();
 
+  useEffect(() => {
+    console.log(BG);
+  }, [BG]);
   return (
     <div className={BG ? "darkMode" : "lightMode"}>
       <div className="app">

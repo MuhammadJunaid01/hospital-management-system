@@ -9,5 +9,27 @@
     { "name": "For Doctors" }
   ],
   "heading": "Complete Health Solution",
-  "heading-info": "Consulting a healthcare professional, buying medicine, ordering lab tests and improving your health and wellbeing, all can be done 24/7 with DocTime!"
+  "heading-info": "Consulting a healthcare professional, buying medicine, ordering lab tests and improving your health and wellbeing, all can be done 24/7 with DocTime!",
+  "facility": [
+    {
+      "name": "Live Video Consultation",
+      "info": "Instant video consultation now or schedule a future appointment",
+      "img": "https://svgshare.com/i/ow0.svg"
+    },
+    {
+      "name": "Healthcare Packages",
+      "info": "Consultations, hospital care, insurance & more",
+      "img": "https://svgshare.com/i/ov6.svg"
+    },
+    {
+      "name": "Diagnostic at your doorstep",
+      "info": "Get tested in few hours at home & get report in the app within 24 hours.",
+      "img": "https://svgshare.com/i/ovF.svg"
+    },
+    {
+      "name": "Order Medicine Online",
+      "info": "Order easily and get the medicine in 1 hour",
+      "img": "https://svgshare.com/i/ow7.svg"
+    }
+  ]
 }
