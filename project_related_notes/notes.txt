@@ -1,0 +1,5 @@
+facility:=  https://mocdoc.in/blog/a-detailed-view-of-hospital-management-system-hms
+
+demo site := https://doctime.com.bd/
+
+figma desing := https://www.figma.com/file/Y0kNSUQJL9xARC7XzcxK43/MEDDICAL---Hospital-website-template-(Community)?node-id=147%3A1780&t=s5YDuwIIlem6QFbZ-0
