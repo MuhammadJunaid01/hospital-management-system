@@ -19,16 +19,18 @@ type NavbarPropType = {
 const NavBar = () => {
   const navigate = useNavigate();
   const dispatch = useDispatch();
-  const { BG } = useSelector((state: Tstore) => state.toggleBG);
+  const { BG, selectLang: isSelect } = useSelector(
+    (state: Tstore) => state.toggleBG
+  );
   const [menu, setMenu] = useState<any | null>(null);
   const { t, i18n } = useTranslation();
   const [selectLng, setSelectLng] = useState("");
-  const [isSelect, setIsSelect] = useState(true);
+
   const [isCollapse, setIsCollapse] = useState<boolean>(false);
 
-  const handleChangeLng = () => {
-    setIsSelect((prev) => !prev);
-  };
+  // const handleChangeLng = () => {
+  //   setIsSelect((prev) => !prev);
+  // };
   useEffect(() => {
     i18n.changeLanguage(isSelect ? "en" : "bn");
     const result = i18nenxt.t("menu", { returnObjects: true });
@@ -76,7 +78,7 @@ const NavBar = () => {
           })}
           <div className="navbar_btn_box">
             <div
-              onClick={handleChangeLng}
+              // onClick={handleChangeLng}
               style={
                 BG
                   ? { border: "1px solid white", cursor: "pointer" }

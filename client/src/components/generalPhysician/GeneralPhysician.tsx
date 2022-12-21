@@ -1,7 +1,8 @@
-import React, { useCallback } from "react";
+import React, { useCallback, useEffect, useState } from "react";
 import { Col, Row, Slider } from "antd";
 import type { SliderMarks } from "antd/es/slider";
 import Doctors from "../doctors/Doctors";
+import CheckBox from "../../shared/checkbox/CheckBox";
 const marks: SliderMarks = {
   0: {
     style: {
@@ -40,6 +41,7 @@ const marks: SliderMarks = {
     label: <strong>1000</strong>,
   },
 };
+
 const price = [
   { price: 202 },
   { price: 440 },
@@ -63,18 +65,17 @@ const price = [
   { price: 440 },
   { price: 202 },
   { price: 440 },
-  { price: 202 },
-  { price: 440 },
+  { price: 500 },
+  { price: 1000 },
 ];
 const GeneralPhysician = () => {
-  const handleRange = (e: number) => {
-    console.log(e);
+  const [range, setRange] = useState(0);
 
-    const res = price.filter((price) => price.price === e);
-    return res;
+  const [res, setRes] = useState();
+  const handleRange = (e: number) => {
+    setRange(e);
   };
-  const res = useCallback(handleRange, []);
-  console.log(res(0));
+
   return (
     <div style={{ marginTop: "20px" }}>
       <Row gutter={[16, 16]}>
@@ -89,6 +90,7 @@ const GeneralPhysician = () => {
               defaultValue={500}
               onChange={(e) => handleRange(e)}
             />
+            <CheckBox />
           </div>
         </Col>
         <Col sm={24} md={17}>
