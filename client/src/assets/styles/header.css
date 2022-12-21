@@ -2,9 +2,10 @@
   width: 100%;
   position: relative;
 }
-.facility_card_container {
-  display: flex;
-  gap: 25px;
+
+.header_content {
+  text-align: center;
+  margin-top: 120px;
 }
 .header_bg_img {
   width: 100%;
@@ -15,7 +16,7 @@
 }
 .facility_card {
   padding: 10px;
-
+  width: 90%;
   cursor: pointer;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif,
@@ -28,4 +29,21 @@
 }
 .facility_card:hover {
   transform: scale(1.1);
+}
+.header_content_text {
+  font-size: 60px;
+}
+.header_text_info {
+  font-size: 35px;
+}
+@media screen and (max-width: 748px) {
+  .header_content {
+    margin-top: 7px;
+  }
+  .header_content_text {
+    font-size: 23px;
+  }
+  .header_text_info {
+    font-size: 17px;
+  }
 }

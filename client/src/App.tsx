@@ -7,20 +7,15 @@ import { toggleBg } from "./redux/reduicers/toggleBG";
 import NavBar from "./components/navbar/NavBar";
 import MainLayoute from "./layoutes/MainLayoute";
 import Header from "./components/header/Header";
+import MainRoute from "./routes/MainRoute";
 function App() {
   const { BG } = useSelector((state: Tstore) => state.toggleBG);
-
   const dispatch = useDispatch();
 
-  useEffect(() => {
-    console.log(BG);
-  }, [BG]);
   return (
     <div className={BG ? "darkMode" : "lightMode"}>
       <div className="app">
-        <MainLayoute>
-          <Header />
-        </MainLayoute>
+        <MainRoute />
       </div>
     </div>
   );

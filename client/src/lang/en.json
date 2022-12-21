@@ -31,5 +31,58 @@
       "info": "Order easily and get the medicine in 1 hour",
       "img": "https://svgshare.com/i/ow7.svg"
     }
+  ],
+  "speciality": "Please select a speciality",
+  "faculty": [
+    {
+      "name": " Physician Medicine / General Physician",
+      "info": "Cold, flu, fever, vomiting, infections, headaches or any other general health issues.",
+      "img": "https://i.ibb.co/5WkkjzN/medicine.png"
+    },
+    {
+      "name": "Pediatrics Child Care / Pediatrics",
+      "info": "Any children's health related issues including physical, behavior and mental health.",
+      "img": "https://i.ibb.co/MsSPWnx/child-Care.png"
+    },
+    {
+      "name": "Psychiatry",
+      "info": "Diagnosis, prevention, and treatment of mental disorders related to mood, behaviour, cognition, and perceptions.",
+      "img": "https://i.ibb.co/4FJcqgn/Psychiatry.png"
+    },
+    {
+      "name": "Nutrition & Food Science",
+      "info": "Weight management, Health &amp; wellness, Overall well being.",
+      "img": "https://i.ibb.co/L6Q9nxm/Nutrition-Food-Science.png"
+    },
+    {
+      "name": "Brain / Neurology",
+      "info": "Diagnosis, treatment for disease involving the central and peripheral nervous systems.",
+      "img": "https://i.ibb.co/RSjvHFn/Neurology.png"
+    },
+    {
+      "name": "Internal Medicine",
+      "info": "Prevention, diagnosis, and treatment of adults across the spectrum from health to complex illness.",
+      "img": "https://i.ibb.co/ZxhK8m1/Internal-Medicine.png"
+    },
+    {
+      "name": "Diabetes / Endocrinology",
+      "info": "Treatment of diseases related to problems with hormone.",
+      "img": "https://i.ibb.co/HYnvQYB/Endocrinology.png"
+    },
+    {
+      "name": "Dental Care / Dentistry",
+      "info": "Diagnosis, management, and treatment of defects and injuries related to the teeth and gums.",
+      "img": "https://i.ibb.co/ryNsKKT/Dental-Care.png"
+    },
+    {
+      "name": "Urology",
+      "info": "Diagnosis and treatment of diseases of the male and female urinary-tract system.",
+      "img": "https://i.ibb.co/GvLdVqq/Urology.png"
+    },
+    {
+      "name": "Cancer / Oncology",
+      "info": "Oncology is a branch of medicine that deals with the prevention, diagnosis, and treatment of cancer",
+      "img": "https://i.ibb.co/g6P7Lx9/cancer.png"
+    }
   ]
 }

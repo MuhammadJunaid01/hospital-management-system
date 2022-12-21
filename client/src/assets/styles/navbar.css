@@ -1,20 +1,32 @@
 .navbar_container {
   width: 100%;
-  height: auto;
+  /* height: fit-content; */
   box-sizing: border-box;
-  /* overflow-y: hidden; */
+  overflow-x: hidden;
+  /* overflow: hidden; */
   position: relative;
 }
 .navbar_content {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+.navbar_menu {
   display: flex;
   align-items: center;
   justify-content: space-between;
   position: relative;
 }
+.navbar_btn_box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 7px;
+}
 .switch_lng {
   width: 60px;
   padding: 1px 0px;
-
+  margin-left: 10px;
   border-radius: 20px;
   display: flex;
   justify-content: space-around;
@@ -26,4 +38,36 @@
   color: white;
 
   cursor: pointer;
+}
+.collaspe_navbar_icon {
+  cursor: pointer;
+  display: none;
+}
+/* .navbar_menu.open {
+  transform: translateX(0%);
+} */
+@media screen and (max-width: 748px) {
+  .navbar_content {
+    /* flex-direction: column; */
+    justify-content: space-between;
+  }
+  .navbar_menu {
+    display: block;
+
+    transform: translateY(-160%);
+    transform-origin: top;
+    transition: transform 800ms ease-in-out;
+  }
+  .navbar_menu.open {
+    margin-top: 30px;
+    transform: translateX(0%);
+    flex-direction: column;
+  }
+  .collaspe_navbar_icon {
+    display: block;
+  }
+  .navbar_btn_box {
+    gap: 9px;
+    flex-direction: column;
+  }
 }
