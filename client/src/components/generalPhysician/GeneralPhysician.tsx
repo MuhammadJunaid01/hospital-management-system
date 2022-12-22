@@ -52,12 +52,14 @@ const GeneralPhysician = () => {
   const [range, setRange] = useState(0);
   const [pr, setPr] = useState<PriceInterface["arr"]>([]);
   const [res, setRes] = useState();
+  const [list, setList] = useState({});
   const handleRange = (e: number) => {
     setRange(e);
   };
   useEffect(() => {
     setPr(price);
-  }, [pr]);
+    console.log("list", list);
+  }, [pr, list]);
   console.log(pr);
   return (
     <div style={{ marginTop: "20px" }}>

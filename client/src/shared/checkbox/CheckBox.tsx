@@ -2,18 +2,19 @@ import React from "react";
 import { Checkbox } from "antd";
 import type { CheckboxChangeEvent } from "antd/es/checkbox";
 import { ceckboxData } from "../../assets/data";
-type NameType = { name: string };
-interface CheckBoxType {
-  checked: boolean;
-  arr: NameType[];
-}
+import { CheckBoxType } from "../../interfaces";
+import { useSearchParams } from "react-router-dom";
 const CheckBox = ({ checked, arr }: CheckBoxType) => {
+  const [current, setParams] = useSearchParams();
   const onChange = (e: CheckboxChangeEvent) => {
-    console.log(`checked = ${e.target.checked}`);
+    // console.log(`checked = ${e.target.checked}`);
   };
   const handleSelect = (name: any) => {
-    console.log(name);
+    // console.log(name);
+    setParams(name);
+    console.log("current", current);
   };
+
   return (
     <div>
       {ceckboxData.map((data, index) => {
